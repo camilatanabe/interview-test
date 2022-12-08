@@ -1,10 +1,16 @@
-.mainPage__banner {
-  display: none;
+.mainPage {
+  padding: 16px;
 }
 
 @media screen and (min-width: '768px') {
-  .mainPage__banner {
-    display: block;
-    width: 100%;
+  .mainPage {
+    &__cardContainer {
+      display: flex;
+      padding: 80px 48px;
+    }
+
+    &__cardContent {
+      width: 55%;
+    }
   }
 }

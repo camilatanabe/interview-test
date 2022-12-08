@@ -1,0 +1,43 @@
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 16px;
+  margin-bottom: 16px;
+
+  &__content {
+    p {
+      font-size: 16px;
+      color: #be9464;
+      margin: 0;
+    }
+
+    span {
+      color: #2b2b2b;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: '768px') {
+  .bigCard {
+    width: 45%;
+    padding: 32px 24px;
+    margin-right: 16px;
+
+    img {
+      width: 70%;
+    }
+  }
+}
