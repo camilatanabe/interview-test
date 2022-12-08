@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 20px 16px;
+
+  &__text {
+    width: 162px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__language {
+    display: none;
+  }
+}
+
+@media screen and (min-width: '768px') {
+  .header {
+    padding: 12px 52px 12px 68px;
+
+    &__text {
+      width: auto;
+    }
+
+    &__languageMenu {
+      display: flex;
+      align-items: center;
+    }
+
+    &__language {
+      display: block;
+      padding-right: 30px;
+    }
+  }
+}

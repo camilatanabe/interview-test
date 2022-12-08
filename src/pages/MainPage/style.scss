@@ -1,0 +1,10 @@
+.mainPage__banner {
+  display: none;
+}
+
+@media screen and (min-width: '768px') {
+  .mainPage__banner {
+    display: block;
+    width: 100%;
+  }
+}
