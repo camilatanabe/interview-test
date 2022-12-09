@@ -3,21 +3,15 @@ import './style.scss'
 import Button from '../../components/Button'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
+import Footer from '../../components/Footer'
 import HimCard from '../../components/HimCard'
 import BigCard from '../../components/BigCard'
 import banner from '../../images/banner.png'
-import himImg1 from '../../images/him1.png'
-import himImg2 from '../../images/him2.png'
-import himImg3 from '../../images/him3.png'
 import logoTransparent from '../../images/logo-transparent.svg'
 import phone from '../../images/phone.png'
+import { himCardData } from '../../utils/content'
 
 const MainPage = () => {
-  const himCardData = [
-    { title: 'Hair loss', color: '#F8CE9F', image: himImg1 },
-    { title: 'Diet', color: '#C7F9DD', image: himImg2 },
-    { title: 'ED', color: '#9DC0FF', image: himImg3 }
-  ]
   return (
     <div>
       <Header />
@@ -56,6 +50,7 @@ const MainPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

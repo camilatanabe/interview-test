@@ -5,7 +5,7 @@ import clockIcon from '../../images/clock-icon.svg'
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src={logo} alt="logo" />
       <div className="header__text">
         <img src={clockIcon} alt="clock icon" />
@@ -19,11 +19,11 @@ const Header = () => {
             <option value="2">Jpn</option>
           </select>
         </div>
-        <button>
+        <button className="header__menuIcon">
           <img src={menuIcon} alt="menu icon" />
         </button>
       </div>
-    </div>
+    </header>
   )
 }
 

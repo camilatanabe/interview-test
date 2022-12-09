@@ -1,0 +1,38 @@
+.footer {
+  &__SignUpContainer {
+    display: flex;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 0;
+  }
+
+  &__desktopLinks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 64px;
+
+    &__SignUpContainer {
+      display: block;
+    }
+
+    &__mobile {
+      display: none;
+    }
+
+    &__desktop {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

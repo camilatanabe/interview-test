@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 20px 16px;
+  padding: 16px 20px;
 
   &__text {
     width: 162px;
@@ -12,6 +12,11 @@
 
   &__language {
     display: none;
+  }
+
+  &__menuIcon {
+    background-color: transparent;
+    border: none;
   }
 }
 
