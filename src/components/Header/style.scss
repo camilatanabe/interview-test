@@ -22,7 +22,7 @@
 
 @media screen and (min-width: '768px') {
   .header {
-    padding: 12px 52px 12px 68px;
+    padding: calc(var(--gridColumn, 1rem) * 0.3) 0;
 
     &__text {
       width: auto;
@@ -35,7 +35,7 @@
 
     &__language {
       display: block;
-      padding-right: 30px;
+      padding-right: calc(var(--gridColumn, 1rem) * 0.5);
     }
   }
 }

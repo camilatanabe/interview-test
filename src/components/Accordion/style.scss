@@ -10,9 +10,11 @@ h1 {
   cursor: pointer;
 }
 
-.accordion-title:hover {
-  background-color: #2b2b2b;
-  color: white;
+.accordion__title {
+  &:hover {
+    background-color: #2b2b2b;
+    color: white;
+  }
 }
 
 .accordion__title,

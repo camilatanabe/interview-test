@@ -32,7 +32,7 @@
 
 @media screen and (min-width: '768px') {
   .banner {
-    margin: 0 -16px;
+    margin: 0 calc(var(--gridColumn, 1rem) * -0.8);
 
     &__overlay {
       position: absolute;
@@ -52,7 +52,7 @@
 
     &__content {
       background-color: #9dc0ff;
-      padding-left: 32px;
+      padding-left: calc(var(--gridColumn, 1rem) * 0.8);
     }
 
     &__image {
@@ -74,7 +74,7 @@
 
     &__subtitleDescription {
       width: 65%;
-      margin-bottom: 24px;
+      margin-bottom: calc(var(--gridColumn, 1rem) * 0.5);
     }
   }
 }

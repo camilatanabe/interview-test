@@ -12,9 +12,11 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div>
-        <div className="footer__SignUpContainer">
-          <Button>Register Now</Button>
-          <Button className="button button--outlined">Login</Button>
+        <div className="footer__signUpContainer">
+          <Button className="button footer__button">Register Now</Button>
+          <Button className="button button--outlined footer__button">
+            Login
+          </Button>
         </div>
         <div className="footer__social">
           <img src={instagram} alt="" />
@@ -38,7 +40,7 @@ const Footer = () => {
             {data.subtitle && (
               <p className="footer__listSubtitle">{data.subtitle}</p>
             )}
-            <ul>
+            <ul className={data.subtitle && 'footer__subList'}>
               {data.items.map(item => {
                 return <li>{item.name}</li>
               })}

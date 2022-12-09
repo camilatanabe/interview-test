@@ -3,10 +3,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 16px;
-  margin: 8px;
-  width: 240px;
-  height: 40px;
+  margin: calc(var(--gridColumn, 1rem) * 0.3);
+  width: calc(var(--gridColumn, 1rem) * 5);
+  height: var(--btnHeight);
   background: #2b2b2b;
   border-radius: 20px;
   color: #fff;
@@ -34,8 +33,10 @@
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .button {
+    margin: calc(var(--gridColumn, 1rem) * 0.3) 0;
+
     &--desktopOnly {
       display: block;
     }

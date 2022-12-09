@@ -1,0 +1,24 @@
+:root {
+  --gridColumn: calc((100vw - (1.5rem * 2)) / 13);
+  --gridGutter: 1.5rem;
+  --btnHeight: 2.5rem;
+}
+
+@media (min-width: '768px') {
+  :root {
+    --gridColumn: calc(100vw / 16);
+    --gridGutter: 0rem;
+  }
+}
+
+@media (min-width: '1024px') {
+  :root {
+    --gridColumn: calc(100vw / 24);
+  }
+}
+
+@media (min-width: '1440px') {
+  :root {
+    --gridColumn: calc(100vw / 24);
+  }
+}

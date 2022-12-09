@@ -12,17 +12,21 @@
   &__desktop {
     display: none;
   }
+
+  &__button {
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 64px;
 
-    &__SignUpContainer {
+    &__signUpContainer {
       display: block;
+      width: calc(var(--gridColumn, 1rem) * 5);
     }
 
     &__mobile {
@@ -33,10 +37,16 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      padding-right: calc(var(--gridColumn, 1rem) * 1);
+      text-align: left;
 
       ul {
         list-style-type: none;
-        padding-inline-start: 16px;
+        padding-inline-start: 0;
+      }
+
+      ul.footer__subList {
+        padding-inline-start: calc(var(--gridColumn, 1rem) * 0.3);
         text-align: left;
         border-left: 1px solid #f5f6f6;
       }
