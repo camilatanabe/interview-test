@@ -24,16 +24,22 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__mobile">
-        {footerData.map(({ title, items }) => (
-          <Accordion title={title} content={items} />
+        {footerData.map(data => (
+          <Accordion
+            title={data.subtitle ? data.subtitle : data.title}
+            content={data.items}
+          />
         ))}
       </div>
       <div className="footer__desktop">
-        {footerData.map(({ title, items }) => (
+        {footerData.map(data => (
           <section>
-            <p>{title}</p>
+            <p>{data.title}</p>
+            {data.subtitle && (
+              <p className="footer__listSubtitle">{data.subtitle}</p>
+            )}
             <ul>
-              {items.map(item => {
+              {data.items.map(item => {
                 return <li>{item.name}</li>
               })}
             </ul>
