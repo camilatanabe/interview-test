@@ -24,7 +24,7 @@ const Banner = ({
             <h3>{subtitle}</h3>
             <p>{description}</p>
           </div>
-          <Button desktopOnly={true}>{buttonText}</Button>
+          <Button className="button button--desktopOnly">{buttonText}</Button>
         </div>
         <img className="banner__image" src={image} alt={imageDescription} />
       </div>

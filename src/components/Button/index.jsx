@@ -1,20 +1,14 @@
 import React from 'react'
 import './style.scss'
 
-const Button = ({
-  outlined,
-  desktopOnly,
-  classNameProps,
-  children,
-  onClick
-}) => {
+const Button = ({ children, onClick, disabled, ...rest }) => {
   return (
     <button
-      className={`button ${outlined ? 'button__outlined' : ''} ${
-        desktopOnly ? 'button__desktopOnly' : ''
-      } ${classNameProps}`}
-      onClick={onClick}
       type="button"
+      disabled={disabled}
+      className="button"
+      onClick={onClick}
+      {...rest}
     >
       {children}
     </button>

@@ -19,7 +19,7 @@ const HimCard = ({
         <h1>{titleBold}</h1>
         <span>{titleNormal}</span>
       </div>
-      <Button classNameProps="himCard__button" onClick={onClick}>
+      <Button className="button himCard__button" onClick={onClick}>
         {buttonText}
       </Button>
     </div>

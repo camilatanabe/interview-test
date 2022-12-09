@@ -14,7 +14,7 @@ const Footer = () => {
       <div>
         <div className="footer__SignUpContainer">
           <Button>Register Now</Button>
-          <Button outlined={true}>Login</Button>
+          <Button className="button button--outlined">Login</Button>
         </div>
         <div className="footer__social">
           <img src={instagram} alt="" />
