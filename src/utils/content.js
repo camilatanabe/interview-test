@@ -10,7 +10,8 @@ export const himCardData = [
 
 export const footerData = [
   {
-    title: 'Treatment for Women',
+    title: 'for Women',
+    subtitle: 'Treatment for Women',
     items: [
       { name: 'GLP-1 ダイエット', url: '' },
       { name: '美容皮膚治療', url: '' },
@@ -19,7 +20,8 @@ export const footerData = [
     ]
   },
   {
-    title: "Men's Treatment",
+    title: 'for Men',
+    subtitle: "Men's Treatment",
     items: [
       { name: 'ED（勃起不全）治療', url: '' },
       { name: '早漏治療', url: '' },

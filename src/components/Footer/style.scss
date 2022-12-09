@@ -33,6 +33,19 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      ul {
+        list-style-type: none;
+        padding-inline-start: 16px;
+        text-align: left;
+        border-left: 1px solid #f5f6f6;
+      }
+    }
+
+    &__listSubtitle {
+      display: list-item;
+      list-style-type: disc;
+      list-style-position: inside;
     }
   }
 }
