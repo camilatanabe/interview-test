@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.accordion__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.accordion__title,
+.accordion__content {
+  padding: 1rem;
+}
