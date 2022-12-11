@@ -23,6 +23,9 @@ const MainPage = () => {
         image={banner}
         buttonText="Shop elife´s products by..."
       ></Banner>
+      <h2 className="mainPage__mobileSubtitle">
+        <span>elife,</span> living in fullness everyday
+      </h2>
       <div className="mainPage__cardContainer">
         <BigCard
           bgImage={bigCardBackground}
@@ -34,7 +37,7 @@ const MainPage = () => {
           buttonText="Start my Visit now"
         />
         <div className="mainPage__cardContent">
-          {himCardData.map((himCard, index) => {
+          {himCardData?.map((himCard, index) => {
             return (
               <HimCard
                 image={himCard.image}

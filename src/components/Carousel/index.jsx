@@ -39,7 +39,7 @@ const Carousel = ({ faceCards }) => {
         <img src={arrowRight} alt="" />
       </Button>
       <Slider ref={setSliderRef} {...sliderSettings}>
-        {faceCards.map((faceCard, index) => (
+        {faceCards?.map((faceCard, index) => (
           <div key={index}>
             <div
               className="carousel__item"

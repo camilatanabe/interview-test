@@ -27,7 +27,7 @@ const Footer = ({ footerData }) => {
           </div>
         </div>
         <div className="footer__mobile">
-          {footerData.map((data, index) => (
+          {footerData?.map((data, index) => (
             <Accordion
               title={data.subtitle ? data.subtitle : data.title}
               content={data.items}
@@ -36,14 +36,14 @@ const Footer = ({ footerData }) => {
           ))}
         </div>
         <div className="footer__desktop">
-          {footerData.map((data, index) => (
+          {footerData?.map((data, index) => (
             <section key={index}>
               <p>{data.title}</p>
               {data.subtitle && (
                 <p className="footer__listSubtitle">{data.subtitle}</p>
               )}
               <ul className={data.subtitle && 'footer__subList'}>
-                {data.items.map((item, index) => {
+                {data.items?.map((item, index) => {
                   return (
                     <li key={index}>
                       <a href="#">{item.name}</a>
