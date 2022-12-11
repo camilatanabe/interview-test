@@ -47,8 +47,8 @@ const MainPage = () => {
             )
           })}
         </div>
-        <Carousel faceCards={faceCards} />
       </div>
+      <Carousel faceCards={faceCards} />
       <Footer footerData={footerData} />
     </div>
   )

@@ -33,7 +33,7 @@ const BigCard = ({
         </div>
         <img src={image} alt="" />
       </div>
-      <Button className="button bigCard__button" onClick={onClick}>
+      <Button className="button" onClick={onClick}>
         {buttonText}
       </Button>
     </div>

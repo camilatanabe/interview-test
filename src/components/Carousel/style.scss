@@ -1,20 +1,88 @@
 .carousel {
+  position: relative;
+  background-color: rgba(248, 206, 159, 0.2);
+  padding: calc(var(--gridColumn, 1rem) * 0.8) 0
+    calc(var(--gridColumn, 1rem) * 0.8) calc(var(--gridColumn, 1rem) * 0.8);
+  margin: 0 calc(var(--gridColumn, 1rem) * -0.8)
+    calc(var(--gridColumn, 1rem) * 3);
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    width: var(--btnHeight);
+    border-radius: 50%;
+    transform: rotate(180deg);
+    z-index: 100;
+
+    &--next {
+      transform: none;
+      right: 0;
+      left: auto;
+    }
+  }
+
   &__item {
-    border-radius: 20px;
     position: relative;
-    height: 300px;
-    background-size: contain;
+    border-radius: 24px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    margin: 0 calc(var(--gridColumn, 1rem) * 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   &__itemOverlay {
     position: absolute;
+    border-radius: 24px;
     width: 100%;
     height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: -236px;
-    z-index: 2;
+  }
+
+  &__itemText {
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    color: var(--white);
+    padding: 0 calc(var(--gridColumn, 1rem) * 1);
+
+    h1,
+    p {
+      font-weight: 500;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+  }
+
+  &__itemButton {
+    position: absolute;
+    z-index: 10;
+    top: auto;
+    bottom: 5%;
+    right: 15%;
+    left: auto;
+  }
+}
+
+@media (min-width: '768px') {
+  .carousel {
+    margin-bottom: calc(var(--gridColumn, 1rem) * 2);
+    &__item {
+      height: 60vh;
+    }
+
+    &__itemText {
+      text-align: left;
+      padding: 0 calc(var(--gridColumn, 1rem) * 0.5);
+    }
+
+    &__itemButton {
+      right: auto;
+      left: 5%;
+      width: 35%;
+    }
   }
 }
