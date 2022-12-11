@@ -1,23 +1,39 @@
-h1 {
-  text-align: center;
-  margin: 2rem 0 4rem 0;
-}
+.accordion {
+  text-align: left;
 
-.accordion__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  cursor: pointer;
-}
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: calc(var(--gridColumn, 1rem) * 0.8);
+    border-bottom: 1px solid var(--iron);
 
-.accordion__title {
-  &:hover {
-    background-color: #2b2b2b;
-    color: white;
+    &:hover {
+      background-color: var(--mine-shaft);
+      color: var(--white);
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
   }
-}
 
-.accordion__title,
-.accordion__content {
-  padding: 1rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--gridColumn, 1rem) * 0.8);
+    font-weight: 500;
+    color: var(--nevada);
+
+    &:last-child {
+      border-bottom: 1px solid var(--iron);
+    }
+  }
+
+  &:first-child {
+    .accordion__title {
+      border-top: 1px solid var(--iron);
+    }
+  }
 }

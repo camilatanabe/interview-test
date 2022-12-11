@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: calc(var(--gridColumn, 1rem) * 0.3) 0;
 
   &__text {
     width: 162px;
@@ -20,10 +20,8 @@
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .header {
-    padding: calc(var(--gridColumn, 1rem) * 0.3) 0;
-
     &__text {
       width: auto;
     }

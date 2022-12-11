@@ -1,13 +1,12 @@
 import React from 'react'
 import './style.scss'
-import Button from '../../components/Button'
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
 import HimCard from '../../components/HimCard'
 import BigCard from '../../components/BigCard'
 import banner from '../../images/banner.png'
-import logoTransparent from '../../images/logo-transparent.svg'
+import bigCardBackground from '../../images/bigCardBackground.png'
 import phone from '../../images/phone.png'
 import { himCardData } from '../../utils/content'
 
@@ -25,8 +24,7 @@ const MainPage = () => {
       ></Banner>
       <div className="mainPage__cardContainer">
         <BigCard
-          bgColor="#F0DEDA"
-          bgImage={logoTransparent}
+          bgImage={bigCardBackground}
           image={phone}
           descriptionPt1="All of our medications"
           descriptionPt2="require a prescription from a physician."
@@ -35,7 +33,7 @@ const MainPage = () => {
           buttonText="Start my Visit now"
         />
         <div className="mainPage__cardContent">
-          {himCardData.map(himCard => {
+          {himCardData.map((himCard, index) => {
             return (
               <HimCard
                 image={himCard.image}
@@ -43,6 +41,7 @@ const MainPage = () => {
                 titleBold={himCard.title}
                 titleNormal="treatment"
                 buttonText={`${himCard.title} treatment`}
+                key={index}
               ></HimCard>
             )
           })}

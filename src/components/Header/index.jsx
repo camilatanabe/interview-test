@@ -12,7 +12,7 @@ const Header = () => {
         <p>Open from: 7:00 a.m to 10:00 p.m </p>
       </div>
       <div className="header__languageMenu">
-        <div class="header__language">
+        <div className="header__language">
           <select>
             <option value="0">Lang:</option>
             <option value="1">Eng</option>
