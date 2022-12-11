@@ -3,7 +3,6 @@ import './style.scss'
 import Button from '../Button'
 
 const BigCard = ({
-  bgColor,
   bgImage,
   image,
   descriptionPt1,
@@ -14,10 +13,13 @@ const BigCard = ({
   buttonText
 }) => {
   return (
-    <div
-      className="bigCard"
-      style={{ backgroundColor: bgColor, backgroundImage: `url(${bgImage})` }}
-    >
+    <div className="bigCard">
+      <div
+        className="bigCard__bgImage"
+        style={{
+          background: `url(${bgImage})`
+        }}
+      ></div>
       <div className="bigCard__content">
         <div className="bigCard__text">
           <p>

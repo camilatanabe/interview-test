@@ -4,11 +4,11 @@
   align-items: center;
   border-radius: 20px;
   position: relative;
-  height: 203px;
+  height: 25vh;
   background-size: contain;
   background-position-x: -70px;
   background-repeat: no-repeat;
-  margin-bottom: 16px;
+  margin-bottom: calc(var(--gridColumn, 1rem) * 0.8);
 
   &__content {
     position: absolute;
@@ -37,9 +37,16 @@
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .himCard {
-    height: 250px;
+    height: 32vh;
+    margin-bottom: calc(var(--gridColumn, 1rem) * 0.5);
+  }
+}
+
+@media (min-width: '1024px') {
+  .himCard {
+    height: 35vh;
 
     &__content {
       display: flex;

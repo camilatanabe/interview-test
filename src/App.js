@@ -1,10 +1,8 @@
-import logo from './logo.svg'
-import './App.scss'
 import MainPage from './pages/MainPage'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <MainPage />
     </div>
   )

@@ -58,41 +58,41 @@ export const footerData = [
     title: 'for Women',
     subtitle: 'Treatment for Women',
     items: [
-      { name: 'GLP-1 ダイエット', url: '' },
-      { name: '美容皮膚治療', url: '' },
-      { name: '低用量ピル', url: '' },
-      { name: 'アフターピルs', url: '' }
+      { name: 'GLP-1 ダイエット', url: '#' },
+      { name: '美容皮膚治療', url: '#' },
+      { name: '低用量ピル', url: '#' },
+      { name: 'アフターピル', url: '#' }
     ]
   },
   {
     title: 'for Men',
     subtitle: "Men's Treatment",
     items: [
-      { name: 'ED（勃起不全）治療', url: '' },
-      { name: '早漏治療', url: '' },
-      { name: 'AGA治療', url: '' },
-      { name: 'GLP-1 ダイエット', url: '' },
-      { name: '美容皮膚治療', url: '' }
+      { name: 'ED（勃起不全）治療', url: '#' },
+      { name: '早漏治療', url: '#' },
+      { name: 'AGA治療', url: '#' },
+      { name: 'GLP-1 ダイエット', url: '#' },
+      { name: '美容皮膚治療', url: '#' }
     ]
   },
   {
     title: 'Other',
     items: [
-      { name: '性感染症治療', url: '' },
-      { name: '禁煙治療', url: '' },
-      { name: '禁煙治療', url: '' },
-      { name: '禁煙治療', url: '' }
+      { name: '性感染症治療', url: '#' },
+      { name: '禁煙治療', url: '#' },
+      { name: '禁煙治療', url: '#' },
+      { name: '禁煙治療', url: '#' }
     ]
   },
   {
     title: 'About eLife',
     items: [
-      { name: 'はじめての方へ', url: '' },
-      { name: 'eLifeについて', url: '' },
-      { name: '記事一覧', url: '' },
-      { name: 'よくあるご質問', url: '' },
-      { name: 'アカウントサポート', url: '' },
-      { name: 'お問い合わせ', url: '' }
+      { name: 'はじめての方へ', url: '#' },
+      { name: 'eLifeについて', url: '#' },
+      { name: '記事一覧', url: '#' },
+      { name: 'よくあるご質問', url: '#' },
+      { name: 'アカウントサポート', url: '#' },
+      { name: 'お問い合わせ', url: '#' }
     ]
   }
 ]
