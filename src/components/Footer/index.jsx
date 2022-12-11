@@ -6,9 +6,8 @@ import instagram from '../../images/instagram.svg'
 import facebook from '../../images/facebook.svg'
 import line from '../../images/line.svg'
 import twitter from '../../images/twitter.svg'
-import { footerData } from '../../utils/content'
 
-const Footer = () => {
+const Footer = ({ footerData }) => {
   return (
     <footer className="footer">
       <div>

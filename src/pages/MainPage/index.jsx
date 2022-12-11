@@ -6,10 +6,11 @@ import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
 import HimCard from '../../components/HimCard'
 import BigCard from '../../components/BigCard'
+import Carousel from '../../components/Carousel'
 import banner from '../../images/banner.png'
 import logoTransparent from '../../images/logo-transparent.svg'
 import phone from '../../images/phone.png'
-import { himCardData } from '../../utils/content'
+import { himCardData, faceCards, footerData } from '../../utils/content'
 
 const MainPage = () => {
   return (
@@ -49,8 +50,9 @@ const MainPage = () => {
             })}
           </div>
         </div>
+        <Carousel faceCards={faceCards} />
       </div>
-      <Footer />
+      <Footer footerData={footerData} />
     </div>
   )
 }
