@@ -1,0 +1,39 @@
+:root {
+  --gridColumn: calc((100vw - (1.5rem * 2)) / 13);
+  --gridGutter: 1.5rem;
+  --btnHeight: 2.5rem;
+
+  //colors
+
+  --white: #fff;
+  --black-haze: #f5f6f6;
+  --iron: #dcdfe2;
+  --mercury: #e8e8e8;
+  --silver: #bcbcbc;
+  --boulder: #7a7a7a;
+  --nevada: #626f78;
+  --mine-shaft: #2b2b2b;
+  --pickled-bluewood: #2d3b53;
+  --black: #000;
+  --anakiwa: #9dc0ff;
+  --twine: #be9464;
+}
+
+@media (min-width: '768px') {
+  :root {
+    --gridColumn: calc(100vw / 16);
+    --gridGutter: 0rem;
+  }
+}
+
+@media (min-width: '1024px') {
+  :root {
+    --gridColumn: calc(100vw / 24);
+  }
+}
+
+@media (min-width: '1440px') {
+  :root {
+    --gridColumn: calc(100vw / 24);
+  }
+}

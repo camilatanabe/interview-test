@@ -3,21 +3,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 16px;
-  margin: 8px;
-  width: 240px;
-  height: 40px;
-  background: #2b2b2b;
+  margin: calc(var(--gridColumn, 1rem) * 0.3);
+  width: calc(var(--gridColumn, 1rem) * 5);
+  height: var(--btnHeight);
+  background: var(--mine-shaft);
   border-radius: 20px;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   font-size: 14px;
   border: none;
 
   &--outlined {
     background: transparent;
-    border: 1px solid #000000;
-    color: #2b2b2b;
+    border: 1px solid var(--black);
+    color: var(--mine-shaft);
   }
 
   &--desktopOnly {
@@ -25,16 +24,16 @@
   }
 
   &:hover {
-    background-color: #7a7a7a;
+    background-color: var(--boulder);
   }
 
   &:disabled {
-    background-color: #e8e8e8;
-    color: #bcbcbc;
+    background-color: var(--mercury);
+    color: var(--silver);
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .button {
     &--desktopOnly {
       display: block;

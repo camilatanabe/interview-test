@@ -12,7 +12,7 @@
   }
 
   &__text {
-    color: #000;
+    color: var(--black);
     text-align: left;
 
     h1 {
@@ -30,9 +30,9 @@
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .banner {
-    margin: 0 -16px;
+    margin: 0 calc(var(--gridColumn, 1rem) * -0.8);
 
     &__overlay {
       position: absolute;
@@ -44,15 +44,15 @@
       bottom: -236px;
       background: linear-gradient(
         180deg,
-        #2d3b53 13.5%,
+        var(--pickled-bluewood) 13.5%,
         rgba(0, 0, 0, 0) 85.88%
       );
       z-index: 2;
     }
 
     &__content {
-      background-color: #9dc0ff;
-      padding-left: 32px;
+      background-color: var(--anakiwa);
+      padding-left: calc(var(--gridColumn, 1rem) * 0.8);
     }
 
     &__image {
@@ -62,7 +62,7 @@
 
     &__text {
       z-index: 5;
-      color: #fff;
+      color: var(--white);
       width: 60%;
 
       h1 {
@@ -74,7 +74,7 @@
 
     &__subtitleDescription {
       width: 65%;
-      margin-bottom: 24px;
+      margin-bottom: calc(var(--gridColumn, 1rem) * 0.5);
     }
   }
 }

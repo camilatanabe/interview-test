@@ -1,23 +1,46 @@
+@keyframes backgroundAnimation {
+  from {
+    background-position: -100% 0, 0 0;
+  }
+  to {
+    background-position: 200% 0, 0 0;
+  }
+}
+
 .bigCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 24px 16px;
-  margin-bottom: 16px;
+  padding: calc(var(--gridColumn, 1rem) * 1) calc(var(--gridColumn, 1rem) * 0.8);
+  margin-bottom: calc(var(--gridColumn, 1rem) * 0.8);
+
+  &__bgImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%, 0;
+
+    animation-name: backgroundAnimation;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 
   &__content {
     p {
       font-size: 16px;
-      color: #be9464;
+      color: var(--twine);
       margin: 0;
     }
 
     span {
-      color: #2b2b2b;
+      color: var(--mine-shaft);
     }
 
     img {
@@ -30,11 +53,19 @@
   }
 }
 
-@media screen and (min-width: '768px') {
+@media (min-width: '768px') {
   .bigCard {
     width: 45%;
-    padding: 32px 24px;
-    margin-right: 16px;
+    height: 91vh;
+    padding: calc(var(--gridColumn, 1rem) * 0.8)
+      calc(var(--gridColumn, 1rem) * 0.5);
+    margin-right: calc(var(--gridColumn, 1rem) * 0.5);
+  }
+}
+
+@media (min-width: '1024px') {
+  .bigCard {
+    height: 100vh;
 
     img {
       width: 70%;
