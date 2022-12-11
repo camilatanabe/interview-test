@@ -5,10 +5,11 @@ import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
 import HimCard from '../../components/HimCard'
 import BigCard from '../../components/BigCard'
+import Carousel from '../../components/Carousel'
 import banner from '../../images/banner.png'
 import bigCardBackground from '../../images/bigCardBackground.png'
 import phone from '../../images/phone.png'
-import { himCardData } from '../../utils/content'
+import { himCardData, faceCards, footerData } from '../../utils/content'
 
 const MainPage = () => {
   return (
@@ -22,6 +23,9 @@ const MainPage = () => {
         image={banner}
         buttonText="Shop elife´s products by..."
       ></Banner>
+      <h2 className="mainPage__mobileSubtitle">
+        <span>elife,</span> living in fullness everyday
+      </h2>
       <div className="mainPage__cardContainer">
         <BigCard
           bgImage={bigCardBackground}
@@ -33,7 +37,7 @@ const MainPage = () => {
           buttonText="Start my Visit now"
         />
         <div className="mainPage__cardContent">
-          {himCardData.map((himCard, index) => {
+          {himCardData?.map((himCard, index) => {
             return (
               <HimCard
                 image={himCard.image}
@@ -47,7 +51,8 @@ const MainPage = () => {
           })}
         </div>
       </div>
-      <Footer />
+      <Carousel faceCards={faceCards} />
+      <Footer footerData={footerData} />
     </div>
   )
 }

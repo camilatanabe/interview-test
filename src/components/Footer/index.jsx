@@ -7,9 +7,8 @@ import facebook from '../../images/facebook.svg'
 import line from '../../images/line.svg'
 import twitter from '../../images/twitter.svg'
 import logo from '../../images/logo.svg'
-import { footerData } from '../../utils/content'
 
-const Footer = () => {
+const Footer = ({ footerData }) => {
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -28,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__mobile">
-          {footerData.map((data, index) => (
+          {footerData?.map((data, index) => (
             <Accordion
               title={data.subtitle ? data.subtitle : data.title}
               content={data.items}
@@ -37,14 +36,14 @@ const Footer = () => {
           ))}
         </div>
         <div className="footer__desktop">
-          {footerData.map((data, index) => (
+          {footerData?.map((data, index) => (
             <section key={index}>
               <p>{data.title}</p>
               {data.subtitle && (
                 <p className="footer__listSubtitle">{data.subtitle}</p>
               )}
               <ul className={data.subtitle && 'footer__subList'}>
-                {data.items.map((item, index) => {
+                {data.items?.map((item, index) => {
                   return (
                     <li key={index}>
                       <a href="#">{item.name}</a>

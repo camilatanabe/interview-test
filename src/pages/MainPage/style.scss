@@ -1,6 +1,20 @@
 .mainPage {
+  color: var(--mine-shaft);
   padding: 0 calc(var(--gridColumn, 1rem) * 0.8)
     calc(var(--gridColumn, 1rem) * 0.8);
+
+  &__mobileSubtitle {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+
+    span {
+      color: var(--ship-cove);
+      font-weight: 500;
+    }
+  }
 }
 
 @media (min-width: '768px') {
@@ -11,7 +25,11 @@
     }
 
     &__cardContent {
-      width: 55%;
+      width: 65%;
+    }
+
+    &__mobileSubtitle {
+      display: none;
     }
   }
 }

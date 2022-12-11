@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 24px;
   position: relative;
   height: 25vh;
   background-size: contain;
@@ -10,10 +10,17 @@
   background-repeat: no-repeat;
   margin-bottom: calc(var(--gridColumn, 1rem) * 0.8);
 
+  &:last-child {
+    margin-bottom: calc(var(--gridColumn, 1rem) * 3);
+  }
+
   &__content {
     position: absolute;
     text-align: left;
-    right: 50px;
+    top: 5%;
+    bottom: auto;
+    right: 15%;
+    left: auto;
 
     h1 {
       font-size: 32px;
@@ -33,7 +40,8 @@
 
   &__button {
     position: absolute;
-    top: 140px;
+    top: auto;
+    bottom: 5%;
   }
 }
 
@@ -41,6 +49,10 @@
   .himCard {
     height: 32vh;
     margin-bottom: calc(var(--gridColumn, 1rem) * 0.5);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -51,7 +63,7 @@
     &__content {
       display: flex;
       align-items: center;
-      top: 100px;
+      bottom: 40%;
 
       h1 {
         margin: 0;
@@ -59,9 +71,8 @@
     }
 
     &__button {
-      top: auto;
-      bottom: 32px;
-      right: 32px;
+      right: 5%;
+      left: auto;
     }
   }
 }

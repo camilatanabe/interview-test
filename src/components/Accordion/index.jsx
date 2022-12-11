@@ -20,7 +20,7 @@ const Accordion = ({ title, content }) => {
         </div>
       </div>
       {isActive &&
-        content.map((item, index) => {
+        content?.map((item, index) => {
           return (
             <div className="accordion__content" key={index}>
               {item.name}
