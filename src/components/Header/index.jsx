@@ -14,9 +14,10 @@ const Header = () => {
       <div className="header__languageMenu">
         <div className="header__language">
           <select>
-            <option value="0">Lang:</option>
-            <option value="1">Eng</option>
-            <option value="2">Jpn</option>
+            <option value="0" selected="selected">
+              Eng
+            </option>
+            <option value="1">Jpn</option>
           </select>
         </div>
         <button className="header__menuIcon">

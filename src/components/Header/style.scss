@@ -8,6 +8,11 @@
     width: 162px;
     display: flex;
     align-items: center;
+    font-weight: 700;
+
+    img {
+      margin-right: calc(var(--gridColumn, 1rem) * 0.2);
+    }
   }
 
   &__language {
@@ -34,6 +39,32 @@
     &__language {
       display: block;
       padding-right: calc(var(--gridColumn, 1rem) * 0.5);
+
+      select {
+        padding: calc(var(--gridColumn, 1rem) * 0.2);
+        border: none;
+        border-radius: 24px;
+        background-color: var(--corvette);
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 100%;
+        padding-left: calc(var(--gridColumn, 1rem) * 0.5);
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('../../images/arrow-down-icon.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: left 0.7em top 50%, 0 0;
+        background-size: 1rem auto, 100%;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
     }
   }
 }

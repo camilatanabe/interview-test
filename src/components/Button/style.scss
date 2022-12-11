@@ -36,7 +36,7 @@
 @media (min-width: '768px') {
   .button {
     &--desktopOnly {
-      display: block;
+      display: flex;
     }
   }
 }

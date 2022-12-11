@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import Button from '../Button'
-import arrowRight from '../../images/arrow-right-icon.svg'
+import arrowRightIcon from '../../images/arrow-right-icon.svg'
 
 const Carousel = ({ faceCards }) => {
   const [sliderRef, setSliderRef] = useState(null)
@@ -30,13 +30,13 @@ const Carousel = ({ faceCards }) => {
         className="button carousel__button"
         onClick={sliderRef?.slickPrev}
       >
-        <img src={arrowRight} alt="" />
+        <img src={arrowRightIcon} alt="" />
       </Button>
       <Button
         className="button carousel__button carousel__button--next"
         onClick={sliderRef?.slickNext}
       >
-        <img src={arrowRight} alt="" />
+        <img src={arrowRightIcon} alt="" />
       </Button>
       <Slider ref={setSliderRef} {...sliderSettings}>
         {faceCards?.map((faceCard, index) => (

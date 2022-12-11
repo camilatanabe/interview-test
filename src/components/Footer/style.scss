@@ -80,6 +80,10 @@
       ul {
         list-style-type: none;
         padding-inline-start: 0;
+
+        li {
+          padding: calc(var(--gridColumn, 1rem) * 0.1);
+        }
       }
 
       ul.footer__subList {
@@ -94,6 +98,7 @@
       display: list-item;
       list-style-type: disc;
       list-style-position: inside;
+      font-size: 20px;
     }
 
     &__polices {

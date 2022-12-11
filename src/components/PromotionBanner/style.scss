@@ -1,0 +1,15 @@
+.promotionBanner {
+  width: 100%;
+  background-color: var(--corvette);
+  text-align: center;
+  padding: calc(var(--gridColumn, 1rem) * 0.1);
+
+  p {
+    font-weight: 500;
+  }
+
+  a {
+    color: var(--swamp);
+    font-weight: 700;
+  }
+}
