@@ -75,5 +75,13 @@
       width: 65%;
       margin-bottom: calc(var(--gridColumn, 1rem) * 0.5);
     }
+
+    .banner__button {
+      align-items: center;
+
+      img {
+        margin-right: calc(var(--gridColumn, 1rem) * 0.2);
+      }
+    }
   }
 }

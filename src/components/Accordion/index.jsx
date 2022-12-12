@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import './style.scss'
-import arrowDown from '../../images/arrow-down-icon.svg'
-import arrowUp from '../../images/arrow-up-icon.svg'
-import foward from '../../images/foward-icon.svg'
+import arrowDownIcon from '../../images/arrow-down-icon.svg'
+import arrowUpIcon from '../../images/arrow-up-icon.svg'
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ title, children }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
@@ -13,21 +12,13 @@ const Accordion = ({ title, content }) => {
         <div>{title}</div>
         <div>
           {isActive ? (
-            <img src={arrowUp} alt="close" />
+            <img src={arrowUpIcon} alt="close" />
           ) : (
-            <img src={arrowDown} alt="open" />
+            <img src={arrowDownIcon} alt="open" />
           )}
         </div>
       </div>
-      {isActive &&
-        content?.map((item, index) => {
-          return (
-            <div className="accordion__content" key={index}>
-              {item.name}
-              <img src={foward} alt="go to the link" />
-            </div>
-          )
-        })}
+      {isActive && children}
     </div>
   )
 }

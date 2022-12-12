@@ -9,6 +9,8 @@ const Banner = ({
   description,
   image,
   imageDescription,
+  onClick,
+  buttonIcon,
   buttonText
 }) => {
   return (
@@ -24,7 +26,13 @@ const Banner = ({
             <h3>{subtitle}</h3>
             <p>{description}</p>
           </div>
-          <Button className="button button--desktopOnly">{buttonText}</Button>
+          <Button
+            className="button button--desktopOnly banner__button"
+            onClick={onClick}
+          >
+            <img src={buttonIcon} alt="icon" />
+            {buttonText}
+          </Button>
         </div>
         <img className="banner__image" src={image} alt={imageDescription} />
       </div>
