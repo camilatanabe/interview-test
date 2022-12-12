@@ -6,7 +6,7 @@ import Slider from 'react-slick'
 import Button from '../Button'
 import arrowRightIcon from '../../images/arrow-right-icon.svg'
 
-const Carousel = ({ faceCards }) => {
+const Carousel = ({ faceCards, onClick }) => {
   const [sliderRef, setSliderRef] = useState(null)
 
   const sliderSettings = {
@@ -55,7 +55,10 @@ const Carousel = ({ faceCards }) => {
                 <p>{faceCard.label}</p>
                 <h1>{faceCard.title}</h1>
               </div>
-              <Button className="button carousel__itemButton">
+              <Button
+                className="button carousel__itemButton"
+                onClick={() => onClick(index)}
+              >
                 Buy products
               </Button>
             </div>

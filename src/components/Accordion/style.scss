@@ -9,6 +9,10 @@
     padding: calc(var(--gridColumn, 1rem) * 0.8);
     border-bottom: 1px solid var(--iron);
 
+    img {
+      filter: brightness(0) invert(0);
+    }
+
     &:hover {
       background-color: var(--mine-shaft);
       color: var(--white);

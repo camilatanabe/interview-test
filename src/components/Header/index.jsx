@@ -4,6 +4,10 @@ import menuIcon from '../../images/menu-filled-icon.svg'
 import clockIcon from '../../images/clock-icon.svg'
 
 const Header = () => {
+  const onClickMenu = () => {
+    return console.log('Menu')
+  }
+
   return (
     <header className="header">
       <img src={logo} alt="logo" />
@@ -13,14 +17,12 @@ const Header = () => {
       </div>
       <div className="header__languageMenu">
         <div className="header__language">
-          <select>
-            <option value="0" selected="selected">
-              Eng
-            </option>
+          <select defaultValue={0}>
+            <option value="0">Eng</option>
             <option value="1">Jpn</option>
           </select>
         </div>
-        <button className="header__menuIcon">
+        <button className="header__menuIcon" onClick={onClickMenu}>
           <img src={menuIcon} alt="menu icon" />
         </button>
       </div>

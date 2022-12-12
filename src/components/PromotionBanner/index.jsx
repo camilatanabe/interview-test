@@ -5,7 +5,7 @@ const PromotionBanner = ({ message, link }) => {
   return (
     <div className="promotionBanner">
       <p>
-        {message} <a href="#">{link}</a>
+        {message} <a href="/">{link}</a>
       </p>
     </div>
   )
